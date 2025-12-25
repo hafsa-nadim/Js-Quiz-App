@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- MODULE SELECTION -->
+  <div class="glass-card" id="moduleBox">
+    <h1>JavaScript Quiz</h1>
+    <p>Select Difficulty</p>
+
+    <div class="module-buttons">
+      <button onclick="startQuiz('easy')">Easy</button>
+      <button onclick="startQuiz('medium')">Medium</button>
+      <button onclick="startQuiz('hard')">Hard</button>
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="glass-card hidden" id="quizBox">
+    <div id="progress" class="progress-text"></div>
+    <h2 id="question"></h2>
+    <div id="options" class="options"></div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="glass-card hidden" id="resultBox">
+    <h1>🎉 Quiz Completed</h1>
+    <p id="score"></p>
+
+    <div class="result-buttons">
+      <button onclick="restartQuiz()">Restart Module</button>
+      <button onclick="backToModules()">Back to Modules</button>
+    </div>
+
+    <div id="answers" class="answers"></div>
+  </div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>
