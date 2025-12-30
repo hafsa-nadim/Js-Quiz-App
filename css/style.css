@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
 }
 
 body {
@@ -10,13 +11,13 @@ body {
   background: linear-gradient(135deg, #667eea, #764ba2);
   display: flex;
   justify-content: center;
-  overflow: hidden;
   align-items: center;
 }
 
 .container {
   width: 90%;
   max-width: 420px;
+ 
 }
 
 .glass-card {
